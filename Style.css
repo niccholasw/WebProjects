@@ -1,4 +1,12 @@
 p {
     color: white;
-    background: black;
+    background: red;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background: green;
 }
