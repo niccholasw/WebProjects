@@ -1,19 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-
-    <link rel="stylesheet" href="app.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" rel="stylesheet">
+    <title>Hello world!</title>
 </head>
 
 <body>
+    <main class="container">
+        <h1>Student Registration Form</h1>
 
-    <h1>Welcome to My Website</h1>
+        <form action="registration_process.php" method="post"></form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
 
-    <button onClick=alertButton()>Click Me</button>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
 
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">Male
+        <input type="radio" id="female" name="gender" value="Female">Female
+        <input type="radio" id="other" name="gender" value="Other">Other<br><br>
+
+        <label for="course">Course:</label>
+        <select name="course" id="course" required>
+            <option value="BEng(Hons)">BEng(Hons)</option>
+            <option value="BSc">BSc</option>
+            <option value="BCom">BCom</option>
+            <option value="BA">BA</option>
+            <option value="BBA">BBA</option>
+        </select><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" required></textarea><br><br>
+        <label for="subscribe>">Subscribe to our newsletter</label>
+        <input type="checkbox" role="switch" id="subscribe" name="subscribe" value="Yes>">Yes, I want to subscribe.<br><br>
+        <input type="submit" value="Submit">
+        </form>
 </body>
-
-<script src="app.js"></script>
 
 </html>
