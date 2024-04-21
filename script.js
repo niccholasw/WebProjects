@@ -9,6 +9,6 @@ function listGroceries() {
 
 listGroceries();
 
-document.getElementById('box').addEventListener('click', function() {
+document.getElementById('box').addEventListener('click', function () {
     alert('I got clicked!');
 });
